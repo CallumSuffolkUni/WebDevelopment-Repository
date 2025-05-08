@@ -1,0 +1,7 @@
+{
+  "name": "in-class",
+  "packageManager": "yarn@4.9.1",
+  "dependencies": {
+    "bootstrap": "v5.3.6"
+  }
+}

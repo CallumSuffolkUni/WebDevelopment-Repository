@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Table</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("E:/WebDevelopment-Repository/IWD-Projects/in-class/images/Friends_watching_Tv.jpg");
+            background-size: cover;
+            background-position-y: 30%; 
+            backdrop-filter: brightness(0.5);
+        }
+        table {
+            width: 50%;
+            margin: 2rem atuo;
+            border-collapse: collapse;
+            font-family: "Bangers", system-ui;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+
+        thead {
+            background-color: #343a40;
+            color:white;
+        }
+
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 0.25rem;
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Films</th>
+                <th>Genre</th>
+                <th>Rating</th>
+                <th>Release Date Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>The Martian</td>
+                <td>Science Fiction</td>
+                <td>8.0</td>
+                <td>2015</td>
+            </tr>
+            <tr>
+                <td>Tangled</td>
+                <td>Adventure</td>
+                <td>7.7</td>
+                <td>2010</td>
+            </tr>
+            <tr>
+                <td>The Hunger Games</td>
+                <td>Action</td>
+                <td>7.2</td>
+                <td>2012</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">End of Film List</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
