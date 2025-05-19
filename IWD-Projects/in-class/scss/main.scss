@@ -1,0 +1,18 @@
+nav .navbar-brand {
+        font-family: "Bangers", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+
+nav ul li a i {
+    margin-right: 2px;
+}
+
+#home-page .jumbotron {
+    background-image: url('../images/homepage-hero-bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #FFF;
+}
