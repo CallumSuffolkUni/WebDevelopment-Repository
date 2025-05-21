@@ -1,4 +1,4 @@
-const url = 'https://content.guardianapis.com/search?q=sport&api-key=';
+const url = 'https://content.guardianapis.com/search?q=education&api-key=';
 const apiKey = 'e3ac8aef-9a2e-4933-a941-720140fd86b9';
 const resultList = document.querySelector('#results');
 

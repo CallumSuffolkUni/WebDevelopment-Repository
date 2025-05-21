@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
-    <title>ScreenV Gaming</title>
+    <title>ScreenV Search</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
@@ -17,9 +17,9 @@
         gtag('js', new Date());
 
         gtag('config', 'G-RBCDNFCVRH');
-    </script>   
+    </script>
 </head>
-<body id="gaming-page">
+<body id="search-page">
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">ScreenV News Website</a>
@@ -48,10 +48,21 @@
         </div>    
     </nav>
     <div class="container mt-5">
-        <h1>Gaming News</h1>
+        <h1>Search News</h1>
+        <form id="search-form" class="mt-4" onsubmit="searchNews(event)">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="keywords"
+                    placeholder="Enter search here...">
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary mb-2">Search</button>
+                </div>
+            </div>
+        </form>
         <div id="results" class="row mt-4"></div>
     </div>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/gaming.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/search.js"></script>
 </body>
 </html>

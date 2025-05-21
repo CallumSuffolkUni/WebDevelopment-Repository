@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
     <title>ScreenV Education</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
@@ -41,13 +40,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="gaming.html"><i class="fa-solid fa-gamepad"></i>Gaming</a>
                     </li>
+                    <li>
+                        <a class="nav-link" href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+                    </li>
                 </ul>
             </div>
         </div>    
     </nav>
-    <div class="mt-5">
+    <div class="container mt-5">
         <h1>Education News</h1>
+        <div id="results" class="row mt-4"></div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/education.js"></script>
 </body>
 </html>
