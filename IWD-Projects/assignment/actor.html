@@ -13,28 +13,28 @@
 </head>
 <body>
     <!-- New NavBar Start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="index.html">TvFax</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="tv_shows.html"><i class="fa-solid fa-tv"></i>Tv Shows</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="people.html"><i class="fa-solid fa-user-group"></i>People</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-secondary" type="submit">Search</button>
-                </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="tv_shows.html"><i class="fa-solid fa-tv"></i>Tv Shows</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="people.html"><i class="fa-solid fa-user-group"></i>People</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>
             </div>
         </div>
     </nav>
@@ -47,11 +47,12 @@
                     <img src="images/TVFax_Banner_1.png" class="d-block w-100 c-img" alt="...">
 
                     <!-- Breadcrumb Start -->
-                        <div class="position-absolute top-0 p-3 w-100" style="z-index: 999;">
+                        <div class="position-absolute top-0 p-3 w-100"  style="z-index: 999;">
                             <nav class="container" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                                 <ol class="breadcrumb rounded px-3 py-2">
                                     <li class="breadcrumb-item"><a class="link-light" href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item active text-light" aria-current="page">People</li>
+                                    <li class="breadcrumb-item"><a class="link-light" href="people.html">People</a></li>
+                                    <li class="breadcrumb-item active text-light" aria-current="page" id="actorNameBreadcrumb">"Actor Name"</li>
                                 </ol>
                             </nav>
                         </div>
@@ -66,31 +67,9 @@
         </div>
     </div>
     <!-- Jumbotron Carousel End -->
-     <div class="container mt-5">
-        <h1>People</h1>
-        <form id="search-form" class="mt-4" action="people.html">
-            <div class="row">
-                <div class="col-md-4">
-                    <input type="text" class="form-control" id="keywords" name="keyword"
-                    placeholder="Enter search here...">
-                </div>
-                <div class="col-md-4">
-                    <button type="submit" class="btn btn-primary mb-2">Search</button>
-                </div>
-            </div>
-        </form>
-        <div id="results" class="row mt-4"></div>
-        <div id="pagination" class="mt-4 text-center"></div>
-    </div>
-    <script src="./js/people.js"></script>
-
-    <!-- Footer Start -->
-     <footer>
-        <div>
-            <hr>
-            <h3 class="display-2 text-center fw-bolder text-capitalize">TvFax</h3>
-        </div>
-     </footer>
-    <!-- Footer End -->
+    <!-- Container With Img Start -->
+    <div id="results"></div>
+    <!-- Container With Img End -->
+    <script src="./js/actor.js"></script>
 </body>
 </html>

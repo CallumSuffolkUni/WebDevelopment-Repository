@@ -1,6 +1,11 @@
-const url = 'https://content.guardianapis.com/search?q=sport&api-key=';
+const urlParams = new URLSearchParams(window.location.search);
+const keyword = urlParams.get('sportQuery');
+
+const url = 'https://content.guardianapis.com/search?section=sport&q=' + keyword + '&api-key=';
 const apiKey = 'e3ac8aef-9a2e-4933-a941-720140fd86b9';
 const resultList = document.querySelector('#results');
+
+console.log(url);
 
 fetch(url + apiKey) 
 .then((response) => response.json()) 

@@ -4,6 +4,48 @@ nav .navbar-brand {
     font-style: normal;
   }
   
-  nav ul li a i {
-    margin-right: 2px;
-  }
+nav ul li a i {
+  margin-right: 2px;
+}
+
+.c-item {
+  height: 400px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.list-group-item {
+  transition: transform 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+  transform: scale(1.03);
+  z-index: 1; /* optional, makes sure it appears above others */
+}
+
+.people .card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.people:hover .card {
+  transform: scale(1.03);
+  transition: transform 0.3s ease, font-size 0.3s ease;
+  z-index: 1; /* optional, ensures it comes above others */
+}
+
+.people:hover .card h5 {
+  transition: transform 0.3s ease, font-size 0.3s ease;
+  font-size: 2.0em;
+}
+
+#tvshowsData {
+  height: 20em;
+  overflow: auto;
+}
+
+.no-border {
+  border: none;
+}

@@ -1,0 +1,14 @@
+.scroll {
+    overflow-x: auto;
+    padding: 1rem;
+    max-width: 100%;
+
+    &-row {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .card {
+        flex: 0 0 auto;
+    }
+}

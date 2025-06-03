@@ -2,52 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <title>TvFax</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/fcf5466d49.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg bg-light">
+<body  id="home-page">
+    <!-- New NavBar Start -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="index.html">TvFax</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="movies.html"><i class="fa-solid fa-video"></i>Movies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tv-shows.html"><i class="fa-solid fa-tv"></i>Tv Shows</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="actors.html"><i class="fa-solid fa-user-group"></i>Actors</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="tv_shows.html"><i class="fa-solid fa-tv"></i>Tv Shows</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="people.html"><i class="fa-solid fa-user-group"></i>People</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>
             </div>
         </div>
     </nav>
-    <!-- Jumbotron -->
-    <div class="p-5 mb-4 bg-light jumbotron">
-        <div class="container">
-            <h1 class="display-5 fw-bold">Welcome to ScreenV News!</h1>
-            <p class="cold-md-8 fs-4">Read the latest sport, education and gaming news from around the world.</p>
+    <!-- New NavBar End -->
+    <!-- Jumbotron Carousel Start -->
+    <div id="carouselMainAuto" class="carousel">
+        <div class="carousel-wrapper">
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item position-relative">
+                    <img src="images/TVFax_Banner_1.png" class="d-block w-100 c-img" alt="Banner Image">
+                    <div class="carousel-caption top-0">
+                        <p class="mt-5 fs-3 text-uppercase">Your favorite actors and shows, all in one place!</p>
+                        <h1 class="display-1 fw-bolder text-capitalize">TV Fax</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <h1>Welcome to TvFax</h1>
-        <p>This is an awesome new website with news from around the world!</p>
-    </div>
+    <!-- Jumbotron Carousel End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
