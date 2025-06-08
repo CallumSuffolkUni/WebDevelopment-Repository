@@ -36,7 +36,7 @@ fetch(url)
 
   <div class="container mt-3">
     <!-- Always Visible Show Info Card -->
-    <div class="card d-flex flex-column flex-lg-row align-items-center p-4 mb-4">
+    <div id="no-hover" class="card d-flex flex-column flex-lg-row align-items-center p-4 mb-4">
       <div class="p-3">
         <img src="${imageUrl}" class="rounded-start" alt="${showName}" style="width: 300px; height: auto;">
       </div>

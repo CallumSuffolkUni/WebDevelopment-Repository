@@ -27,7 +27,7 @@ fetch('https://api.tvmaze.com/shows')
 
     const showsSection = `
       <div class="container mx-auto">
-        <h2 class="mb-3 mt-3 text-center ">Top Shows</h2>
+        <h2 class="mb-3 mt-3 text-center ">Shows</h2>
         <div class="d-flex flex-wrap justify-content-center">
           ${showCardsHTML}
         </div>
@@ -62,7 +62,7 @@ fetch('https://api.tvmaze.com/people')
 
     const peopleSection = `
       <div class="container mx-auto justify-content-center">
-        <h2 class="mb-3 mt-3 text-center">Top Actors/Actresses</h2>
+        <h2 class="mb-3 mt-3 text-center">Actors/Actresses</h2>
         <div class="d-flex flex-wrap justify-content-center">
           ${peopleCardsHTML}
         </div>

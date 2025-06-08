@@ -8,7 +8,7 @@ fetch(url)
 .then((response) => response.json())
 .then((data) => {
     const actorName = data.name || "Unknown";
-    const country = data.country.name || "Unknown";
+    const country = data.country?.name || "Unknown";
     const birthday = data.birthday || "Unknown";
     const deathday = data.deathday || "Unknown";
     const gender = data.gender || "Unknown";
@@ -33,7 +33,7 @@ fetch(url)
 
     const articleElement = `
         <div class="container mt-3">
-            <div class="card d-flex flex-column flex-lg-row align-items-center p-4">
+            <div id="no-hover" class="card d-flex flex-column flex-lg-row align-items-center p-4">
                 <div class="p-3 text-center text-md-start">
                     <img src="${imageUrl}" class="rounded-start" alt="${actorName}" style="width: 300px; height: auto;">
                 </div>

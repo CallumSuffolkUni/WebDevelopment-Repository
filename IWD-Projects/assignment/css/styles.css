@@ -26,17 +26,17 @@ nav ul li a i {
   z-index: 1; /* optional, makes sure it appears above others */
 }
 
-.people .card {
+.card:not(#no-hover) {
   transition: transform 0.2s ease-in-out;
 }
 
-.people:hover .card {
+.card:not(#no-hover):hover {
   transform: scale(1.03);
   transition: transform 0.3s ease, font-size 0.3s ease;
-  z-index: 1; /* optional, ensures it comes above others */
+  z-index: 1;
 }
 
-.people:hover .card h5 {
+.card:not(#no-hover):hover h5 {
   transition: transform 0.3s ease, font-size 0.3s ease;
   font-size: 2.0em;
 }
