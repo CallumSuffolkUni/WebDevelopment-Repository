@@ -47,9 +47,9 @@ function renderPeople() {
         const imageUrl = person.image?.medium || "images/no-img-portrait-text.png";
 
         const articleElement = `
-        <div class="card-group col-4 justify-content-center">
+        <div class="card-group col-lg-4 col-md-6 col-sm-6 justify-content-center">
             <a href="actor.html?id=${person.id}" class="people" style="width: 100%"> 
-                <div class="card text-bg-dark text-center no-border">
+                <div class="card text-bg-dark text-center no-border rounded-1">
                     <img src="${imageUrl}" class="object-fit-cover opacity-75" alt="${name}">
                     <div class="card-img-overlay top-80">
                         <h5 class="text-white bg-dark-subtle card-title fw-bolder text-capitalize">${name}</h5>

@@ -59,7 +59,7 @@ function renderShows() {
                             <p class="mb-1 summary fs-5">${summary}</p>
                         </div>
                     </div>
-                    <small class="position-absolute top-0 end-0 m-2 text-body-secondary">${rating}<i class="fa-regular fa-star"></i></small>
+                    <small class="d-none d-md-block position-absolute top-0 end-0 m-2 text-body-secondary">${rating}<i class="fa-regular fa-star"></i></small>
                 </a>
             </div>
         </div>

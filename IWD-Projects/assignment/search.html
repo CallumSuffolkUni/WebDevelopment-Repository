@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV Fax</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/fcf5466d49.js" crossorigin="anonymous"></script>
 </head>
-<body id="tvShows-page">
+<body id="serach-page">
     <!-- New NavBar Start -->
-     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="index.html">TvFax</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +22,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="tv_shows.html"><i class="fa-solid fa-tv"></i>Tv Shows</a>
+                <a class="nav-link" href="tv_shows.html"><i class="fa-solid fa-tv"></i>Tv Shows</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="people.html"><i class="fa-solid fa-user-group"></i>People</a>
@@ -45,19 +45,7 @@
         <div class="carousel-wrapper">
             <div class="carousel-inner">
                 <div class="carousel-item active c-item position-relative">
-                    <img src="images/TVFax_Banner_1.png" class="d-block w-100 c-img" alt="...">
-
-                    <!-- Breadcrumb Start -->
-                        <div class="position-absolute top-0 p-3 w-100" style="z-index: 999;">
-                            <nav class="container" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-                                <ol class="breadcrumb rounded px-3 py-2">
-                                    <li class="breadcrumb-item"><a class="link-light" href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item active text-light" aria-current="page">Tv Shows</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    <!-- Breadcrumb End -->
-
+                    <img src="images/TVFax_Banner_1.png" class="d-block w-100 c-img" alt="Banner Image">
                     <div class="carousel-caption top-0">
                         <p class="mt-5 fs-3 text-uppercase">Your favorite actors and shows, all in one place!</p>
                         <h1 class="display-1 fw-bolder text-capitalize">TV Fax</h1>
@@ -68,24 +56,7 @@
     </div>
     <!-- Jumbotron Carousel End -->
 
-    <!-- Search Start -->
-     <div class="container mt-5">
-        <h1>TV Shows</h1>
-        <form id="search-form" class="mt-4" action="tv_shows.html">
-            <div class="row">
-                <div class="col-md-4">
-                    <input type="text" class="form-control" id="keywords" name="keyword"
-                    placeholder="Enter search here...">
-                </div>
-                <div class="col-md-4">
-                    <button type="submit" class="btn btn-primary mb-2">Search</button>
-                </div>
-            </div>
-        </form>
-        <div id="results" class="mt-4"></div>
-        <div id="pagination" class="mt-4 text-center"></div>
-    </div>  
-    <!-- Search End -->
+    <div id="search"></div>
 
     <!-- Footer Start -->
      <footer class="bg-light text-center text-lg-start mt-5 border-top">
@@ -99,8 +70,7 @@
         </div>
     </footer>
     <!-- Footer End -->
-
-    <script src="./js/tv_shows.js"></script>
+    <script src="./js/search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

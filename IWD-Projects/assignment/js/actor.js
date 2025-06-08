@@ -8,30 +8,33 @@ fetch(url)
 .then((response) => response.json())
 .then((data) => {
     const actorName = data.name || "Unknown";
-    const country = data.country.name || "Unkown";
-    const birthday = data.birthday || "Unkown";
-    const deathday = data.deathday || "Unkown";
-    const gender = data.gender || "Unkown";
+    const country = data.country.name || "Unknown";
+    const birthday = data.birthday || "Unknown";
+    const deathday = data.deathday || "Unknown";
+    const gender = data.gender || "Unknown";
     const imageUrl = data.image?.medium || "images/no-img-portrait-text.png";
     const castCredits = data._embedded?.castcredits || [];
 
     breadcrumbElement.textContent = actorName;
 
-    const showLinks = castCredits.map(credit => {
+        // Create clickable show links with show names
+        const showLinks = castCredits.map(credit => {
         const showHref = credit._links.show.href;
         const showId = showHref.split('/').pop();
-        const showName = credit._links.show.name;
+        // For show name, fetch from embedded or credit?
+        // API returns show name here usually:
+        const showName = credit._links.show.name || "Unknown Show";
 
-        if (showId && showName) {
-            return `<a class="link-dark" href="show.html?id=${encodeURIComponent(showId)}">${showName}</a>`;
-        }
-        return "Uknown Show";
-    }).join(', ');
+        // Return an anchor tag for the show
+        return `<a class="link-dark mx-1" href="show.html?id=${encodeURIComponent(showId)}">
+                    ${showName}
+                </a>`;
+    }).join('');
 
     const articleElement = `
         <div class="container mt-3">
-            <div class="card d-flex flex-row align-items-center p-4">
-                <div class="p-3">
+            <div class="card d-flex flex-column flex-lg-row align-items-center p-4">
+                <div class="p-3 text-center text-md-start">
                     <img src="${imageUrl}" class="rounded-start" alt="${actorName}" style="width: 300px; height: auto;">
                 </div>
                 <div class="p-4" style="font-size: 1.25rem";>
@@ -59,10 +62,9 @@ fetch(url)
         `;
 
     resultList.insertAdjacentHTML('beforeend', articleElement);
-    })
-    
 
-.catch(error => {
-                console.error("Error fetching actor:", error);
-                breadcrumbElement.textContent = "Error loading name";
-            });
+  })
+  .catch(error => {
+    console.error("Error fetching actor:", error);
+    breadcrumbElement.textContent = "Error loading name";
+  });
